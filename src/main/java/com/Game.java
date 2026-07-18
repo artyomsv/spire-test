@@ -1,4 +1,4 @@
-package com.test;
+package com;
 
 
 //This class's main purpose is to calculate Fibonacci numbers. 
