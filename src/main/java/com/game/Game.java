@@ -1,4 +1,4 @@
-package com.play;
+package com.game;
 
 
 //This class's main purpose is to calculate Fibonacci numbers. 
