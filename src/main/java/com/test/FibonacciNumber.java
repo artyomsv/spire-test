@@ -6,7 +6,7 @@ public class FibonacciNumber {
 
   public static void main(String[] args) {
       PrimeNumbers unknownVariable = new PrimeNumbers();
-      return unknownVariable.getFibonacciNumber();
+      System.out.println(unknownVariable.getFibonacciNumber());
   }
 
   private int getFibonacciNumber() {
