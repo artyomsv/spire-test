@@ -5,7 +5,7 @@ package com.test;
 public class FibonacciNumber {
 
   public static void main(String[] args) {
-      PrimeNumbers unknownVariable = new PrimeNumbers();
+      FibonacciNumber unknownVariable = new FibonacciNumber();
       System.out.println(unknownVariable.getFibonacciNumber());
   }
 
