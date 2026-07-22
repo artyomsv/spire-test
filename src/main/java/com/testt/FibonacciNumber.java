@@ -4,8 +4,8 @@ package com.testt;
 public class FibonacciNumber {
 
   public static void main(String[] args) {
-      FibonacciNumber unknownVariable = new FibonacciNumber();
-      System.out.println(unknownVariable.getFibonacciNumber());
+      FibonacciNumber calculator = new FibonacciNumber();
+      System.out.println(calculator.getFibonacciNumber());
   }
 
   private int getFibonacciNumber() {
