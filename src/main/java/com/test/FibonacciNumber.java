@@ -6,18 +6,19 @@ public class FibonacciNumber {
 
   public static void main(String[] args) {
       FibonacciNumber unknownVariable = new FibonacciNumber();
-      System.out.println(unknownVariable.getFibonacciNumber());
+      System.out.println(unknownVariable.getFibonacciNumber(100));
   }
 
-private int getFibonacciNumber(int n) {
+private BigInteger getFibonacciNumber(int n) {
     if (n < 0) {
         throw new IllegalArgumentException("n must be non-negative: " + n);
     }
-    int previous = 0;
-    int current = n == 0 ? 0 : 1;
+    BigInteger previous = BigInteger.ZERO;
+    BigInteger current = n == 0 ? BigInteger.ZERO : BigInteger.ONE;
     for (int i = 2; i <= n; i++) {
-        current += previous;
-        previous = current - previous;
+        BigInteger next = current.add(previous);
+        previous = current;
+        current = next;
     }
     return current;
 }
