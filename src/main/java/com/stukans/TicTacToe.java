@@ -1,0 +1,28 @@
+package com.stukans;
+
+public class TicTacToe {
+
+  public static void main(String[] args) {
+    Game game = new Game();  
+    game.play();
+    game.move(1, 2);
+    game.win();
+  }
+
+  public static class Game {
+
+    public void play(){
+      System.out.println("Game started");
+    }
+
+    public void move(int x, int y) {
+      System.out.println("User made move to x:" + x + " y:" + y);
+    }
+
+    public void win() {
+      System.out.println("User 1 won!");
+    }
+    
+  }
+  
+}
