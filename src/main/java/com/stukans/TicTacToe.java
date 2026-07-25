@@ -5,6 +5,8 @@ public class TicTacToe {
   public static void main(String[] args) {
     Game game = new Game();  
     game.play();
+    game.move(1, 2);
+    game.win();
   }
 
   private static void move(int x, int y) {
@@ -12,7 +14,7 @@ public class TicTacToe {
   }
 
   private static void win() {
-    System.out.println("User 1 won!")
+    System.out.println("User 1 won!");
   }
 
   public static class Game {
