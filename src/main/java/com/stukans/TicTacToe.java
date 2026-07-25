@@ -8,11 +8,19 @@ public class TicTacToe {
   }
 
   private static void move(int x, int y) {
-    make move
+    System.out.println("User made move to x:" + x + " y:" + y);
   }
 
-  private statis void win() {
+  private static void win() {
     System.out.println("User 1 won!")
   }
 
+  public static class Game {
+
+    public void play(){
+      System.out.println("Game started");
+    }
+    
+  }
+  
 }
