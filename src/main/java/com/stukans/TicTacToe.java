@@ -9,18 +9,18 @@ public class TicTacToe {
     game.win();
   }
 
-  private static void move(int x, int y) {
-    System.out.println("User made move to x:" + x + " y:" + y);
-  }
-
-  private static void win() {
-    System.out.println("User 1 won!");
-  }
-
   public static class Game {
 
     public void play(){
       System.out.println("Game started");
+    }
+
+    public void move(int x, int y) {
+      System.out.println("User made move to x:" + x + " y:" + y);
+    }
+
+    public void win() {
+      System.out.println("User 1 won!");
     }
     
   }
