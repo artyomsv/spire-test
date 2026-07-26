@@ -2,11 +2,13 @@ package com.code-review;
 
 public class CRTest {
 
+  private static String VARIABLE = 123L;
+
   public static void main(String[] args) {
     Game game = new Game();  
     game.play();
     game.move(1, 2);
-    game.win()
+    game.win();
   }
 
     public static void win() {
