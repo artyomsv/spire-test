@@ -1,6 +1,6 @@
-package com.code-review;
+package com.codereview;
 
-public class CRTest {
+public class TicTacToe {
 
   private static String VARIABLE = "Variable";
 
