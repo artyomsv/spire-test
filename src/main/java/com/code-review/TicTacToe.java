@@ -9,7 +9,7 @@ public class CRTest {
     game.win()
   }
 
-    public statis void win() {
+    public static void win() {
       System.out.println("User 1 won!");
     }
 
