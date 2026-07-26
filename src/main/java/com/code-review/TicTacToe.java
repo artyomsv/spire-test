@@ -8,7 +8,7 @@ public class CRTest {
     Game game = new Game();  
     game.play();
     game.move(1, 2);
-    game.win();
+    win();
   }
 
     public static void win() {
