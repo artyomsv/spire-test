@@ -2,7 +2,7 @@ package com.code-review;
 
 public class CRTest {
 
-  private static String VARIABLE = 123L;
+  private static String VARIABLE = "Variable";
 
   public static void main(String[] args) {
     Game game = new Game();  
