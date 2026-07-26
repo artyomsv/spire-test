@@ -6,7 +6,7 @@ public class CRTest {
     Game game = new Game();  
     game.play();
     game.move(1, 2);
-    game.win()
+    game.win();
   }
 
     public statis void win() {
