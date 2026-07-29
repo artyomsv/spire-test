@@ -1,6 +1,6 @@
 package com.code-review;
 
-public class CRTest {
+public class TicTacToe2 {
 
   public static void main(String[] args) {
     Game game = new Game();  
