@@ -7,13 +7,13 @@ public class CRTest {
     game.play();
     game.move(1, 2);
     game.win();
-  }
-
-    public static void win() {
-      System.out.println("User 1 won!");
-    }
+  }    
 
   public static class Game {    
+
+public void win() {
+      System.out.println("User 1 won!");
+    }
     
     public void play(){
       System.out.println("Game started");
