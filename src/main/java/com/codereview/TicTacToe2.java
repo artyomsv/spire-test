@@ -1,4 +1,4 @@
-package com.code-review;
+package com.codereview;
 
 public class TicTacToe2 {
 
