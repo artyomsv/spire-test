@@ -1,1 +1,12 @@
-All monetary values are integer millicents — never a float or a double.
+## Money
+All monetary values are integer millicents. Never use float, double or BigDecimal
+for money; a method that accepts or returns a monetary amount uses long.
+
+## Nulls
+Public methods reject a null argument with IllegalArgumentException before doing
+any other work. A public method returning a collection never returns null —
+return an empty collection instead.
+
+## Transport naming
+Types that cross a service boundary use exactly three suffixes: *Dto, *View,
+*Payload. Any other suffix is wrong.
