@@ -6,7 +6,7 @@ import com.pricing.Pricer;
 public final class Billing {
 
     public static void main(String[] args) {
-        long millicents = Pricer.chargeFor(1_000L, 5L);
-        System.out.println("charge in millicents: " + millicents);
+        long cents = Pricer.chargeFor(1_000L, 5L);
+        System.out.println("charge in cents: " + cents);
     }
 }
