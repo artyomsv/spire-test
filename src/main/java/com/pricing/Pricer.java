@@ -13,13 +13,24 @@ public final class Pricer {
      * would round every small call to zero.
      *
      * @param tokens                 tokens consumed, must not be negative
-     * @param rateMillicentsPerToken the rate in force, in millicents per token
+     * @param rateMillicentsPerToken the rate in force, in millicents per token, must not be negative
      * @return the charge in millicents
+     * @throws IllegalArgumentException if either input is negative or the charge overflows
      */
     public static long chargeFor(long tokens, long rateMillicentsPerToken) {
         if (tokens < 0) {
             throw new IllegalArgumentException("tokens must not be negative");
         }
-        return tokens * rateMillicentsPerToken;
+        if (rateMillicentsPerToken < 0) {
+            throw new IllegalArgumentException("rateMillicentsPerToken must not be negative");
+        }
+        try {
+            return Math.multiplyExact(tokens, rateMillicentsPerToken);
+        } catch (ArithmeticException e) {
+            throw new IllegalArgumentException(
+                    "charge overflows for tokens=" + tokens
+                            + ", rateMillicentsPerToken=" + rateMillicentsPerToken,
+                    e);
+        }
     }
 }
