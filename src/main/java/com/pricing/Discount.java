@@ -14,6 +14,6 @@ public final class Discount {
      * @return what the customer pays, in millicents
      */
     public static long afterDiscount(long chargeMillicents, int percent) {
-        return chargeMillicents * percent / 100;
+        return chargeMillicents - (chargeMillicents * percent / 100);
     }
 }
