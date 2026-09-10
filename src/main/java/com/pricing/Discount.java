@@ -14,6 +14,9 @@ public final class Discount {
      * @return what the customer pays, in millicents
      */
     public static long afterDiscount(long chargeMillicents, int percent) {
+        if (percent < 0 || percent > 100 || chargeMillicents < 0) {
+            throw new IllegalArgumentException("invalid discount arguments");
+        }
         return chargeMillicents - (chargeMillicents * percent / 100);
     }
 }
