@@ -15,11 +15,23 @@ public final class Pricer {
      * @param tokens                 tokens consumed, must not be negative
      * @param rateMillicentsPerToken the rate in force, in millicents per token
      * @return the charge in millicents
+     * @throws IllegalArgumentException if tokens or rateMillicentsPerToken is negative, or
+     *                                  if the charge would overflow a long
      */
     public static long chargeFor(long tokens, long rateMillicentsPerToken) {
         if (tokens < 0) {
             throw new IllegalArgumentException("tokens must not be negative");
         }
-        return tokens * rateMillicentsPerToken;
+        if (rateMillicentsPerToken < 0) {
+            throw new IllegalArgumentException("rateMillicentsPerToken must not be negative");
+        }
+
+        try {
+            return Math.multiplyExact(tokens, rateMillicentsPerToken);
+        } catch (ArithmeticException e) {
+            throw new IllegalArgumentException(
+                    "charge overflow for tokens and rateMillicentsPerToken",
+                    e);
+        }
     }
 }
