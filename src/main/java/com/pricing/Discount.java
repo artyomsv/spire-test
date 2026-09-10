@@ -17,6 +17,7 @@ public final class Discount {
         if (percent < 0 || percent > 100 || chargeMillicents < 0) {
             throw new IllegalArgumentException("invalid discount arguments");
         }
-        return chargeMillicents - (chargeMillicents * percent / 100);
+        long discount = (chargeMillicents / 100) * percent + (chargeMillicents % 100) * percent / 100;
+        return chargeMillicents - discount;
     }
 }
