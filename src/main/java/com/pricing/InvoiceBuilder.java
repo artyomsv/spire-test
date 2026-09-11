@@ -28,10 +28,10 @@ public final class InvoiceBuilder {
     /**
      * The lines collected so far.
      *
-     * @return the lines, or null when nothing has been added yet
+     * @return the lines
      */
     public List<InvoiceLineResponse> lines() {
-        return lines.isEmpty() ? null : lines;
+        return List.copyOf(lines);
     }
 
     /**
