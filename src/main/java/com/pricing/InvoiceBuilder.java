@@ -18,10 +18,10 @@ public final class InvoiceBuilder {
      *
      * @param description what the call was for
      * @param tokens      tokens consumed
-     * @param ratePerToken the rate in force
+     * @param rateMillicentsPerToken the rate in force, in millicents per token
      */
-    public void add(String description, long tokens, double ratePerToken) {
-        double amount = tokens * ratePerToken;
+    public void add(String description, long tokens, long rateMillicentsPerToken) {
+        long amount = tokens * rateMillicentsPerToken;
         lines.add(new InvoiceLineResponse(description, amount));
     }
 
@@ -40,7 +40,7 @@ public final class InvoiceBuilder {
      * @return the total in cents
      */
     public double total() {
-        double sum = 0.0;
+        long sum = 0L;
         for (InvoiceLineResponse line : lines) {
             sum += line.amount();
         }
@@ -48,6 +48,6 @@ public final class InvoiceBuilder {
     }
 
     /** One priced line on its way to the billing service. */
-    public record InvoiceLineResponse(String description, double amount) {
+    public record InvoiceLineResponse(String description, long amount) {
     }
 }

@@ -11,8 +11,8 @@ public final class Billing {
         System.out.println("charge in millicents: " + millicents);
 
         InvoiceBuilder invoice = new InvoiceBuilder();
-        invoice.add("agent run", 1_000L, 5.0);
-        invoice.add("review call", 250L, 5.0);
+        invoice.add("agent run", 1_000L, 5L);
+        invoice.add("review call", 250L, 5L);
         System.out.println("invoice total in cents: " + invoice.total());
         System.out.println("lines: " + invoice.lines().size());
     }
