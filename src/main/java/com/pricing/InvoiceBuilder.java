@@ -35,16 +35,16 @@ public final class InvoiceBuilder {
     }
 
     /**
-     * The invoice total, converted to cents for the billing service.
+     * The invoice total, in millicents.
      *
-     * @return the total in cents
+     * @return the total in millicents
      */
-    public double total() {
+    public long total() {
         long sum = 0L;
         for (InvoiceLinePayload line : lines) {
             sum += line.amount();
         }
-        return sum / 100.0;
+        return sum;
     }
 
     /** One priced line on its way to the billing service. */
