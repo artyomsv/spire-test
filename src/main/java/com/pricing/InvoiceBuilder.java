@@ -11,7 +11,7 @@ import java.util.List;
  */
 public final class InvoiceBuilder {
 
-    private final List<InvoiceLineResponse> lines = new ArrayList<>();
+    private final List<InvoiceLinePayload> lines = new ArrayList<>();
 
     /**
      * Adds one priced call to this invoice.
@@ -22,7 +22,7 @@ public final class InvoiceBuilder {
      */
     public void add(String description, long tokens, long rateMillicentsPerToken) {
         long amount = tokens * rateMillicentsPerToken;
-        lines.add(new InvoiceLineResponse(description, amount));
+        lines.add(new InvoiceLinePayload(description, amount));
     }
 
     /**
@@ -30,7 +30,7 @@ public final class InvoiceBuilder {
      *
      * @return the lines
      */
-    public List<InvoiceLineResponse> lines() {
+    public List<InvoiceLinePayload> lines() {
         return List.copyOf(lines);
     }
 
@@ -41,13 +41,13 @@ public final class InvoiceBuilder {
      */
     public double total() {
         long sum = 0L;
-        for (InvoiceLineResponse line : lines) {
+        for (InvoiceLinePayload line : lines) {
             sum += line.amount();
         }
         return sum / 100.0;
     }
 
     /** One priced line on its way to the billing service. */
-    public record InvoiceLineResponse(String description, long amount) {
+    public record InvoiceLinePayload(String description, long amount) {
     }
 }
