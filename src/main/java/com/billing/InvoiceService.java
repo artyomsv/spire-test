@@ -20,6 +20,9 @@ public class InvoiceService {
     }
 
     public List<InvoiceResponse> findForCustomer(String customerId) {
+        if (customerId == null) {
+            throw new IllegalArgumentException("customerId must not be null");
+        }
         log.info("loading invoices for " + customerId + " with key " + apiKey);
         List<InvoiceResponse> out = new ArrayList<>();
         try {
