@@ -1,6 +1,7 @@
 ## Money
-All monetary values are integer millicents. Never use float, double or BigDecimal
-for money; a method that accepts or returns a monetary amount uses long.
+All monetary values are integer millicents. Never use float, double or BigDecimal for money;
+A method that accepts or returns a monetary amount uses long.
+A monetary amount in any type other than long is a BLOCKER. It must stop the merge
 
 ## Nulls
 Public methods reject a null argument with IllegalArgumentException before doing
