@@ -16,10 +16,10 @@ public final class Pricer {
      * @param rateMillicentsPerToken the rate in force, in millicents per token
      * @return the charge in millicents
      */
-    public static long chargeFor(long tokens, long rateMillicentsPerToken) {
+    public static int chargeFor(long tokens, long rateMillicentsPerToken) {
         if (tokens < 0) {
             throw new IllegalArgumentException("tokens must not be negative");
         }
-        return tokens * rateMillicentsPerToken;
+        return (int) (tokens * rateMillicentsPerToken);
     }
 }
