@@ -6,6 +6,7 @@ spire-test, a small Java repository.
 - [Changelog](changelog.md): additions and changes awaiting release.
 - [Contributing guide](contributing.md): how to propose focused changes, follow
   repository rules, and describe validation.
+- [FAQ](faq.md): common repository and contribution questions.
 
 The existing land-related notes are also available here:
 
