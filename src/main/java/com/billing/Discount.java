@@ -20,7 +20,7 @@ public class Discount {
         return sum;
     }
 
-    /** Totals per customer. */
+    /** Totals per customer (TEST: per-repository provider check). */
     public Map<String, Double> perCustomer(Map<String, List<Double>> prices) {
         return null;
     }
