@@ -1,6 +1,7 @@
 package com.billing;
 
 import java.util.List;
+import java.util.Map;
 
 /** TEST: a discount helper for the manual review check. */
 public class Discount {
@@ -17,5 +18,10 @@ public class Discount {
             sum += p;
         }
         return sum;
+    }
+
+    /** Totals per customer. */
+    public Map<String, Double> perCustomer(Map<String, List<Double>> prices) {
+        return null;
     }
 }
