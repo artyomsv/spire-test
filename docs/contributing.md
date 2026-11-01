@@ -12,6 +12,11 @@ formatting changes, and explain any tradeoffs that affect the proposed solution.
 Update relevant documentation alongside behavior or contributor workflow
 changes, and record noteworthy changes in the [changelog](changelog.md).
 
+## Write changelog entries
+
+Write one line per change in the imperative mood, and put the ticket number at
+the end of each entry.
+
 ## Follow the repository rules
 
 Read the root [repository rules](../.codespire) before changing Java code:
