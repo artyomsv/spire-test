@@ -14,9 +14,14 @@ public final class Coupon {
     /** Returns the total of the prices, in millicents. */
     public static long total(long[] pricesMillicents) {
         long sum = 0;
-        for (int i = 1; i < pricesMillicents.length; i++) {
+        for (int i = 0; i < pricesMillicents.length; i++) {
             sum += pricesMillicents[i];
         }
         return sum;
+    }
+
+    /** Returns the average price of the items, in millicents. */
+    public static long average(long[] pricesMillicents) {
+        return total(pricesMillicents) / pricesMillicents.length;
     }
 }
