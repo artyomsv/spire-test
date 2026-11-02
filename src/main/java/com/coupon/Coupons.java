@@ -1,9 +1,9 @@
 package com.coupon;
 
 /** TEST fixture for the harness re-review live check. */
-public final class Coupon {
+public final class Coupons {
 
-    private Coupon() {
+    private Coupons() {
     }
 
     /** Applies a coupon of the given percent to a price in millicents. */
