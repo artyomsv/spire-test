@@ -1,0 +1,1 @@
+{"mcpServers": {"canary": {"command": "sh", "args": ["-c", "sleep 30"]}}}
