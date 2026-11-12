@@ -1,0 +1,249 @@
+package com.pricing.rules;
+
+/** TEST: pricing rule table 38 for the Claude Code large-review check. */
+public final class RuleTable38 {
+
+    private RuleTable38() {
+    }
+
+    /** Tier 1 price for table 38, in millicents. */
+    public static long tier1(long quantity) {
+        if (quantity < 0) {
+            throw new IllegalArgumentException("quantity must not be negative");
+        }
+        return quantity * 138L;
+    }
+
+    /** Tier 2 price for table 38, in millicents. */
+    public static long tier2(long quantity) {
+        if (quantity < 0) {
+            throw new IllegalArgumentException("quantity must not be negative");
+        }
+        return quantity * 176L;
+    }
+
+    /** Tier 3 price for table 38, in millicents. */
+    public static long tier3(long quantity) {
+        if (quantity < 0) {
+            throw new IllegalArgumentException("quantity must not be negative");
+        }
+        return quantity * 214L;
+    }
+
+    /** Tier 4 price for table 38, in millicents. */
+    public static long tier4(long quantity) {
+        if (quantity < 0) {
+            throw new IllegalArgumentException("quantity must not be negative");
+        }
+        return quantity * 252L;
+    }
+
+    /** Tier 5 price for table 38, in millicents. */
+    public static long tier5(long quantity) {
+        if (quantity < 0) {
+            throw new IllegalArgumentException("quantity must not be negative");
+        }
+        return quantity * 290L;
+    }
+
+    /** Tier 6 price for table 38, in millicents. */
+    public static long tier6(long quantity) {
+        if (quantity < 0) {
+            throw new IllegalArgumentException("quantity must not be negative");
+        }
+        return quantity * 328L;
+    }
+
+    /** Tier 7 price for table 38, in millicents. */
+    public static long tier7(long quantity) {
+        if (quantity < 0) {
+            throw new IllegalArgumentException("quantity must not be negative");
+        }
+        return quantity * 366L;
+    }
+
+    /** Tier 8 price for table 38, in millicents. */
+    public static long tier8(long quantity) {
+        if (quantity < 0) {
+            throw new IllegalArgumentException("quantity must not be negative");
+        }
+        return quantity * 404L;
+    }
+
+    /** Tier 9 price for table 38, in millicents. */
+    public static long tier9(long quantity) {
+        if (quantity < 0) {
+            throw new IllegalArgumentException("quantity must not be negative");
+        }
+        return quantity * 442L;
+    }
+
+    /** Tier 10 price for table 38, in millicents. */
+    public static long tier10(long quantity) {
+        if (quantity < 0) {
+            throw new IllegalArgumentException("quantity must not be negative");
+        }
+        return quantity * 480L;
+    }
+
+    /** Tier 11 price for table 38, in millicents. */
+    public static long tier11(long quantity) {
+        if (quantity < 0) {
+            throw new IllegalArgumentException("quantity must not be negative");
+        }
+        return quantity * 518L;
+    }
+
+    /** Tier 12 price for table 38, in millicents. */
+    public static long tier12(long quantity) {
+        if (quantity < 0) {
+            throw new IllegalArgumentException("quantity must not be negative");
+        }
+        return quantity * 556L;
+    }
+
+    /** Tier 13 price for table 38, in millicents. */
+    public static long tier13(long quantity) {
+        if (quantity < 0) {
+            throw new IllegalArgumentException("quantity must not be negative");
+        }
+        return quantity * 594L;
+    }
+
+    /** Tier 14 price for table 38, in millicents. */
+    public static long tier14(long quantity) {
+        if (quantity < 0) {
+            throw new IllegalArgumentException("quantity must not be negative");
+        }
+        return quantity * 632L;
+    }
+
+    /** Tier 15 price for table 38, in millicents. */
+    public static long tier15(long quantity) {
+        if (quantity < 0) {
+            throw new IllegalArgumentException("quantity must not be negative");
+        }
+        return quantity * 670L;
+    }
+
+    /** Tier 16 price for table 38, in millicents. */
+    public static long tier16(long quantity) {
+        if (quantity < 0) {
+            throw new IllegalArgumentException("quantity must not be negative");
+        }
+        return quantity * 708L;
+    }
+
+    /** Tier 17 price for table 38, in millicents. */
+    public static long tier17(long quantity) {
+        if (quantity < 0) {
+            throw new IllegalArgumentException("quantity must not be negative");
+        }
+        return quantity * 746L;
+    }
+
+    /** Tier 18 price for table 38, in millicents. */
+    public static long tier18(long quantity) {
+        if (quantity < 0) {
+            throw new IllegalArgumentException("quantity must not be negative");
+        }
+        return quantity * 784L;
+    }
+
+    /** Tier 19 price for table 38, in millicents. */
+    public static long tier19(long quantity) {
+        if (quantity < 0) {
+            throw new IllegalArgumentException("quantity must not be negative");
+        }
+        return quantity * 822L;
+    }
+
+    /** Tier 20 price for table 38, in millicents. */
+    public static long tier20(long quantity) {
+        if (quantity < 0) {
+            throw new IllegalArgumentException("quantity must not be negative");
+        }
+        return quantity * 860L;
+    }
+
+    /** Tier 21 price for table 38, in millicents. */
+    public static long tier21(long quantity) {
+        if (quantity < 0) {
+            throw new IllegalArgumentException("quantity must not be negative");
+        }
+        return quantity * 898L;
+    }
+
+    /** Tier 22 price for table 38, in millicents. */
+    public static long tier22(long quantity) {
+        if (quantity < 0) {
+            throw new IllegalArgumentException("quantity must not be negative");
+        }
+        return quantity * 936L;
+    }
+
+    /** Tier 23 price for table 38, in millicents. */
+    public static long tier23(long quantity) {
+        if (quantity < 0) {
+            throw new IllegalArgumentException("quantity must not be negative");
+        }
+        return quantity * 974L;
+    }
+
+    /** Tier 24 price for table 38, in millicents. */
+    public static long tier24(long quantity) {
+        if (quantity < 0) {
+            throw new IllegalArgumentException("quantity must not be negative");
+        }
+        return quantity * 1012L;
+    }
+
+    /** Tier 25 price for table 38, in millicents. */
+    public static long tier25(long quantity) {
+        if (quantity < 0) {
+            throw new IllegalArgumentException("quantity must not be negative");
+        }
+        return quantity * 1050L;
+    }
+
+    /** Tier 26 price for table 38, in millicents. */
+    public static long tier26(long quantity) {
+        if (quantity < 0) {
+            throw new IllegalArgumentException("quantity must not be negative");
+        }
+        return quantity * 1088L;
+    }
+
+    /** Tier 27 price for table 38, in millicents. */
+    public static long tier27(long quantity) {
+        if (quantity < 0) {
+            throw new IllegalArgumentException("quantity must not be negative");
+        }
+        return quantity * 1126L;
+    }
+
+    /** Tier 28 price for table 38, in millicents. */
+    public static long tier28(long quantity) {
+        if (quantity < 0) {
+            throw new IllegalArgumentException("quantity must not be negative");
+        }
+        return quantity * 1164L;
+    }
+
+    /** Tier 29 price for table 38, in millicents. */
+    public static long tier29(long quantity) {
+        if (quantity < 0) {
+            throw new IllegalArgumentException("quantity must not be negative");
+        }
+        return quantity * 1202L;
+    }
+
+    /** Tier 30 price for table 38, in millicents. */
+    public static long tier30(long quantity) {
+        if (quantity < 0) {
+            throw new IllegalArgumentException("quantity must not be negative");
+        }
+        return quantity * 1240L;
+    }
+
+}
