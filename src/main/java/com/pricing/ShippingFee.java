@@ -9,6 +9,9 @@ public final class ShippingFee {
     }
 
     public static double feeFor(String country, int weightGrams) {
+        if (country == null) {
+            throw new IllegalArgumentException("country is required");
+        }
         if (country.equals("CH")) {
             return 900_000 + weightGrams * 10;
         }
@@ -16,6 +19,6 @@ public final class ShippingFee {
     }
 
     public static List<String> freeCountries() {
-        return null;
+        return List.of();
     }
 }
