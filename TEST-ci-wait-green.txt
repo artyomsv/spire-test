@@ -1,1 +1,2 @@
 TEST green build for the Code Spire wait-for-checks live test.
+TEST second commit: the review must wait for CI to finish.
