@@ -1,0 +1,14 @@
+# TEST-only CI for live-testing Code Spire's "Start review: after checks finish".
+# Green by default; a PR that adds a file named `ci-fail` at the root goes red.
+name: ci
+on: pull_request
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sleep 45
+      - name: fail on marker
+        run: |
+          if [ -f ci-fail ]; then echo "TEST ci-fail marker present"; exit 1; fi
+          echo "TEST checks green"
